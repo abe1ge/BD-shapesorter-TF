@@ -10,6 +10,7 @@ to get this working follow these steps
 2. Move 1/4 of the traning data to the corosponding validate folder
 
 	$ mv data/train/squares/data3*  data/validate/squares/.
+	
 	$ mv data/train/triangles/data3*  data/validate/triangles/. 
 	
 3. now you can run shapesorter.py
