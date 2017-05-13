@@ -12,6 +12,11 @@ to get this working follow these steps
 	$ mv data/train/squares/data3*  data/validate/squares/.
 	
 	$ mv data/train/triangles/data3*  data/validate/triangles/. 
+
+3. Convert our images to TensorFlow TFRecord format
+	$ python build_image_data.py --train_directory=./train --output_directory=./  \
+	--validation_directory=./validate --labels_file=mylabels.txt   \
+	--train_shards=1 --validation_shards=1 --num_threads=1
 	
 3. now you can run shapesorter.py
 	you can change simpleModel variable true to use a simple model and and False for convolutional neural network
